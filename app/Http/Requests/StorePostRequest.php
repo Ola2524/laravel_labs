@@ -28,8 +28,7 @@ class StorePostRequest extends FormRequest
     public function rules()
     {
         return [
-            'title'=>['required','min:3','unique:posts,' . $this->id],
-            \Illuminate\Validation\Rule::unique('posts')->ignore($this->id),
+            'title'=>['required','min:3','unique:posts'],
             'description'=>['required','min:10']
         ];
     }

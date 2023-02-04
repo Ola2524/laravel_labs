@@ -50,7 +50,7 @@ class postController extends Controller
 
         ]);
 
-        return redirect()->route("posts.index");
+        return redirect("posts");
     }
 
     public function show($id){
