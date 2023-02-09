@@ -53,6 +53,11 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
+                                <a href="{{ route('github') }}" class="btn btn-success">
+                                    <i class="fa-brands fa-github"></i>
+                                    Sign in with GITHUB
+                                </a>
+
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>

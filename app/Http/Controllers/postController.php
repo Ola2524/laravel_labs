@@ -13,7 +13,8 @@ class postController extends Controller
 {
     public function index(){
         // $posts = Post::all();
-        $posts = Post::paginate(5)->fragment('posts');;
+        $posts = Post::paginate(5)->fragment('posts');
+        $created_at = array();
         foreach($posts as $post){
             $dt = Carbon::parse($post['created_at']);
             $d = $dt->year."-".$dt->month."-".$dt->day;
